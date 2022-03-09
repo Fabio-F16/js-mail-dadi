@@ -1,4 +1,4 @@
-console.log('js ok')
+// console.log('js ok')
 
 // Chiedi all’utente la sua email,
 // controlla che sia nella lista di chi può accedere,
@@ -26,21 +26,27 @@ for (let i = 0; i < email.length; i ++){
 }
 // fine parte accettazione
 
-// inizio dadi
+
+
+
+// dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
+
+// numeri random con dichiarazione max e min
 max = 6;
 min = 1;
 
 let numberUser = Math.floor(Math.random() * (max - min + 1) + min);
 console.log('il tuo numero è ' + numberUser)
 
-
 let numberBot = Math.floor(Math.random() * (max - min + 1) + min);
 console.log('il numero del computer è ' + numberBot)
+// fine numeri random con dichiarazione max e min
 
 
+// scelta vincitore
 if (numberBot > numberUser){
     console.log('Ha vinto il computer')
 
@@ -48,6 +54,8 @@ if (numberBot > numberUser){
 } else if(numberBot < numberUser){
 console.log('Hai vinto!')
 }
+// fine scelta vincitore
+
 
 
     
