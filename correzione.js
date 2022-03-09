@@ -43,8 +43,8 @@ verifyEmail.addEventListener('click', function () {
 // inizio dadi giusti
 const dadiGenerator = document.querySelector('#dadi > button')
 
-numberComputer = document.querySelector('.computer')
-numberUser = document.querySelector('.utente')
+// let numberComputer = document.querySelector('.computer')
+
 
 dadiGenerator.addEventListener('click', function () {
 
@@ -53,23 +53,26 @@ dadiGenerator.addEventListener('click', function () {
     
     let numberUser = Math.floor(Math.random() * (max - min) + min);
     console.log('il tuo numero è ' + numberUser)
+    document.querySelector('.utente').innerText = 'il tuo numero è ' + numberUser;
     
     let numberBot = Math.floor(Math.random() * (max - min) + min);
     console.log('il numero del computer è ' + numberBot)  
+    document.querySelector('.computer').innerText = 'Il numero del computer è ' + numberBot;
    
     if (numberBot > numberUser){
     console.log('Ha vinto il computer');
-
-
-
-
+    document.querySelector('.risultato').innerText = 'Hai perso :-(';
     }
     
     if(numberBot < numberUser){
     console.log('Hai vinto!');
-    }
-
+    document.querySelector('.risultato').innerText = 'Hai vinto!!';
+    } 
     
+    if(numberBot === numberUser){
+    console.log('Hai vinto!');
+    document.querySelector('.risultato').innerText = 'Hai pareggiato!!';
+        }
 
 })
 
