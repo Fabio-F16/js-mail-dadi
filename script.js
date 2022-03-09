@@ -15,11 +15,31 @@ for (let i = 0; i < email.length; i ++){
 
     if(value == email[i]) {
         console.log('utente registrato');
+       
+        max = 6;
+        min = 1;
+
+        let numberUser = Math.floor(Math.random() * (max - min + 1) + min);
+        console.log('il tuo numero è ' + numberUser)
+
+        let numberBot = Math.floor(Math.random() * (max - min + 1) + min);
+        console.log('il numero del computer è ' + numberBot)        
+
+
+        if (numberBot > numberUser){
+        console.log('Ha vinto il computer')
+
+
+        } else if(numberBot < numberUser){
+        console.log('Hai vinto!')
+        }
         break
     }
-    
-    else if(value != email[i]){
+
+
+    if(value != email[i]){
         console.log('utente non registrato');
+
         break
     } 
     
@@ -35,32 +55,23 @@ for (let i = 0; i < email.length; i ++){
 
 
 // numeri random con dichiarazione max e min
-max = 6;
-min = 1;
+// max = 6;
+// min = 1;
 
-let numberUser = Math.floor(Math.random() * (max - min + 1) + min);
-console.log('il tuo numero è ' + numberUser)
+// let numberUser = Math.floor(Math.random() * (max - min + 1) + min);
+// console.log('il tuo numero è ' + numberUser)
 
-let numberBot = Math.floor(Math.random() * (max - min + 1) + min);
-console.log('il numero del computer è ' + numberBot)
+// let numberBot = Math.floor(Math.random() * (max - min + 1) + min);
+// console.log('il numero del computer è ' + numberBot)
 // fine numeri random con dichiarazione max e min
 
 
-// scelta vincitore
-if (numberBot > numberUser){
-    console.log('Ha vinto il computer')
+// // scelta vincitore
+// if (numberBot > numberUser){
+//     console.log('Ha vinto il computer')
 
 
-} else if(numberBot < numberUser){
-console.log('Hai vinto!')
-}
-// fine scelta vincitore
-
-
-
-    
-
-
-
-
-
+// } else if(numberBot < numberUser){
+// console.log('Hai vinto!')
+// }
+// // fine scelta vincitore
