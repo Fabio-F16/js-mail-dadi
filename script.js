@@ -5,7 +5,7 @@
 // stampa un messaggio appropriato sull’esito del controllo.
 
 
-const email = ['email1@gmail.com', 'email2@gmail.com', 'email3@gmail.com', 'email4@gmail.com', 'email5@gmail.com'];
+const email = ['email1@gmaill.com', 'email2@gmail.com', 'email3@gmail.com', 'email4@gmail.com', 'email5@gmail.com'];
 
 const value = prompt('inserisci la tua email');
 
@@ -19,28 +19,30 @@ for (let i = 0; i < email.length; i ++){
         max = 6;
         min = 1;
 
-        let numberUser = Math.floor(Math.random() * (max - min + 1) + min);
+        let numberUser = Math.floor(Math.random() * (max - min) + min);
         console.log('il tuo numero è ' + numberUser)
 
-        let numberBot = Math.floor(Math.random() * (max - min + 1) + min);
+        let numberBot = Math.floor(Math.random() * (max - min) + min);
         console.log('il numero del computer è ' + numberBot)        
 
 
         if (numberBot > numberUser){
-        console.log('Ha vinto il computer')
+        console.log('Ha vinto il computer');
 
 
-        } else if(numberBot < numberUser){
-        console.log('Hai vinto!')
+        }else if(numberBot < numberUser){
+        console.log('Hai vinto!');
+
+        
         }
-        break
-    }
+        
+    }   
+    
 
 
     if(value != email[i]){
         console.log('utente non registrato');
 
-        break
     } 
     
 }
