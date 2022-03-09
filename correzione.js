@@ -59,7 +59,6 @@ dadiGenerator.addEventListener('click', function () {
     console.log('Hai vinto!');
     document.querySelector('.risultato').innerText = 'Hai pareggiato, ritenta!!';
     }
-
 })
 // fine dadi
 
