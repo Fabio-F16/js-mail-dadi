@@ -5,25 +5,25 @@ console.log('js ok')
 // stampa un messaggio appropriato sull’esito del controllo.
 
 
-// const email = ['email1@gmail.com', 'email2@gmail.com', 'email3@gmail.com', 'email4@gmail.com', 'email5@gmail.com'];
+const email = ['email1@gmail.com', 'email2@gmail.com', 'email3@gmail.com', 'email4@gmail.com', 'email5@gmail.com'];
 
-// const value = prompt('inserisci la tua email');
+const value = prompt('inserisci la tua email');
 
 
-// for (let i = 0; i < email.length; i ++){
+for (let i = 0; i < email.length; i ++){
     
 
-//     if(value == email[i]) {
-//         console.log('utente registrato');
-//         break
-//     }
+    if(value == email[i]) {
+        console.log('utente registrato');
+        break
+    }
     
-//     else if(value != email[i]){
-//         console.log('utente non registrato');
-//         break
-//     } 
+    else if(value != email[i]){
+        console.log('utente non registrato');
+        break
+    } 
     
-// }
+}
 // fine parte accettazione
 
 // inizio dadi
