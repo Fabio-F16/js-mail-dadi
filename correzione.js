@@ -1,9 +1,7 @@
+// inizio controllo email
 const verifyEmail = document.querySelector ('#email > button');
 
-
 verifyEmail.addEventListener('click', function () {
-
-   
 
     const email = ['email1@gmaill.com', 'email2@gmail.com', 'email3@gmail.com', 'email4@gmail.com', 'email5@gmail.com'];
     const inputEmail = document.querySelector ('#email > input').value;
@@ -13,38 +11,26 @@ verifyEmail.addEventListener('click', function () {
 
     for (let i = 0; i < email.length; i++) {
     
-       
         if(inputEmail == email[i]) {
             controllo = true;
             console.log('utente registrato');
-           
+            document.querySelector('.risultatoRegistrazione').innerText = 'Utente registrato';
             break;
         } 
-       
     }
 
-
- 
     if(controllo == false){
         console.log('utente non registrato');
-       
+        document.querySelector('.risultatoRegistrazione').innerText = 'Utente non registrato';
     } 
 
 })
-
-
 // fine controllo email
 
 
+
 // inizio dadi
-
-
-
-// inizio dadi giusti
 const dadiGenerator = document.querySelector('#dadi > button')
-
-// let numberComputer = document.querySelector('.computer')
-
 
 dadiGenerator.addEventListener('click', function () {
 
@@ -53,7 +39,7 @@ dadiGenerator.addEventListener('click', function () {
     
     let numberUser = Math.floor(Math.random() * (max - min) + min);
     console.log('il tuo numero è ' + numberUser)
-    document.querySelector('.utente').innerText = 'il tuo numero è ' + numberUser;
+    document.querySelector('.utente').innerText = 'Il tuo numero è ' + numberUser;
     
     let numberBot = Math.floor(Math.random() * (max - min) + min);
     console.log('il numero del computer è ' + numberBot)  
@@ -68,14 +54,14 @@ dadiGenerator.addEventListener('click', function () {
     console.log('Hai vinto!');
     document.querySelector('.risultato').innerText = 'Hai vinto!!';
     } 
-    
+
     if(numberBot === numberUser){
     console.log('Hai vinto!');
     document.querySelector('.risultato').innerText = 'Hai pareggiato!!';
-        }
+    }
 
 })
-
+// fine dadi
 
 
 
