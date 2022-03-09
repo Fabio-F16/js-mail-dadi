@@ -3,7 +3,7 @@ const verifyEmail = document.querySelector ('#email .row button');
 
 verifyEmail.addEventListener('click', function () {
 
-    const email = ['email1@gmaill.com', 'email2@gmail.com', ' ', 'email4@gmail.com', 'email5@gmail.com'];
+    const email = ['email1@gmaill.com', 'email2@gmail.com', 'email3@gmail.com', 'email4@gmail.com', 'email5@gmail.com'];
     const inputEmail = document.querySelector ('#email .row input').value;
     let controllo = false;
     // console.log(inputEmail);
@@ -52,7 +52,7 @@ dadiGenerator.addEventListener('click', function () {
     
     if(numberBot < numberUser){
     console.log('Hai vinto!');
-    document.querySelector('.risultato').innerHTML = '<p class="bg-success rounded w-100">Hai vinto! :-)</p>';
+    document.querySelector('.risultato').innerHTML = '<p class="bg-success rounded">Hai vinto! :-)</p>';
     } 
 
     if(numberBot === numberUser){
