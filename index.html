@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>js mail dadi</title>
 </head>
 <body>
 
 
-        <div id="email">
+        <div id="email" class="container" >
 
-            <input type="mail">
-            <button>Login</button>
+            <div class="row gap-3">
 
-            <div class="risultatoRegistrazione">
+                <h1>Riconosci utente</h1>
+
+                <input class="col-5" type="mail" placeholder="Inserire l'email">
+
+                <button class="col-5 rounded-pill">Login</button>
+    
+                <div class="risultatoRegistrazione col-6 rounded-pill">
+    
+                </div>
 
             </div>
 
@@ -23,25 +31,27 @@
 
         <div id="dadi">
 
-            <button>Genera Dadi</button>
+            <div class="container">
 
-            <div class="computer">
+                <div class="row">
 
+                    <h1>Tenta la fortuna!</h1>
+                    <button class="rounded-pill">Genera Dadi</button>
+        
+                    <div class="computer col-4 bg-success">
+        
+                    </div>
+        
+                    <div class="utente col-4 bg-light">
+        
+                    </div>
+        
+        
+                    <div class="risultato col-4 bg-danger">
+        
+                    </div>
 
-
-            </div>
-
-
-
-            <div class="utente">
-
-
-
-
-            </div>
-
-
-            <div class="risultato">
+                </div>
 
             </div>
 

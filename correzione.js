@@ -1,10 +1,10 @@
 // inizio controllo email
-const verifyEmail = document.querySelector ('#email > button');
+const verifyEmail = document.querySelector ('#email .row button');
 
 verifyEmail.addEventListener('click', function () {
 
     const email = ['email1@gmaill.com', 'email2@gmail.com', 'email3@gmail.com', 'email4@gmail.com', 'email5@gmail.com'];
-    const inputEmail = document.querySelector ('#email > input').value;
+    const inputEmail = document.querySelector ('#email .row input').value;
     let controllo = false;
     // console.log(inputEmail);
     
@@ -21,7 +21,7 @@ verifyEmail.addEventListener('click', function () {
 
     if(controllo == false){
         console.log('utente non registrato');
-        document.querySelector('.risultatoRegistrazione').innerText = 'Utente non registrato';
+        document.querySelector('.risultatoRegistrazione').innerText = 'Utente non registrato' ;
     } 
 
 })
@@ -30,7 +30,7 @@ verifyEmail.addEventListener('click', function () {
 
 
 // inizio dadi
-const dadiGenerator = document.querySelector('#dadi > button')
+const dadiGenerator = document.querySelector('#dadi .container button')
 
 dadiGenerator.addEventListener('click', function () {
 
@@ -57,7 +57,7 @@ dadiGenerator.addEventListener('click', function () {
 
     if(numberBot === numberUser){
     console.log('Hai vinto!');
-    document.querySelector('.risultato').innerText = 'Hai pareggiato!!';
+    document.querySelector('.risultato').innerText = 'Hai pareggiato, ritenta!!';
     }
 
 })
